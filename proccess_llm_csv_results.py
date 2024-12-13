@@ -90,9 +90,9 @@ csv_df = pd.read_csv("tweet_emotions.csv")  # replace with the path to your CSV 
 # Dictionary to store sentences and their detected emotions
 detected_emotions = {}
 
-# Open the text file and process line by line
+# Open the csv file and process line by line
 results_file = "results_llama-3.2-1b-instruct.csv"
-with open(results_file, 'r') as file:  # replace with the path to your TXT file
+with open(results_file, 'r') as file:  
     not_detected = 0
     for line in file:
         try:
