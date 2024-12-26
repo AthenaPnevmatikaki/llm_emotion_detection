@@ -10,15 +10,11 @@ def analyze_emotion(model, content, max_tokens, sentence):
     headers = {
         "Content-Type": "application/json"
     }
-    data = {
-        "model": model,
-        "messages": [
-            {"role": "system", "content": content},
-            {"role": "user", "content": sentence}
-        ],
-        "max_tokens": max_tokens,
-        "temperature": 0.2
-    }
+    data = {"model": model, "messages": []}
+    data["messages"].append({"role": "system", "content": content})
+    data["messages"].append({"role": "user", "content": sentence})
+    data["max_tokens"] = max_tokens
+    data["temperature"] = 0.2
     # Send the request
     response = requests.post(url, headers=headers, data=json.dumps(data))
     # Convert response to JSON
@@ -40,28 +36,54 @@ def analyze_emotion(model, content, max_tokens, sentence):
 def analyze_emotions_from_csv(file_path, content=1, model_id=0, output="JSON", start_index=0):
     if content == 0:
         max_tokens = 1000
+        result_type = 'reason'
         content_text = """Return the emotion in the given sentences.
             Select between empty, sadness, enthusiasm, neutral, worry, surprise, love, fun, hate, happiness, boredom, relief, and anger.
             Reply only with a list of the emotions you are most confident that are in the text, their strength and the reasons you selected them.
             Structure the returned list as JSON using: [{"emotion": "detected emotion", "strength": "medium/high", "rationale": "your explanation"]}, ...]"""
     elif content == 1:
         max_tokens = 1000
+        result_type = 'reason'
         content_text = """Return the most evident emotion in the given sentences.
             Reply only with one emotion from this list: sadness, enthusiasm, neutral, worry, surprise, love, fun, hate, happiness, boredom, relief, and anger.
             Include your reason for selecting this emotion.
             Structure the returned list as JSON using: [{"emotion": "detected emotion", "rationale": "your explanation"]}, ...]"""
-    else:
-        max_tokens = 10
-        content_text = """Detect the most prominent emotion in the sentence I will give you, by selecting the motion from the following list:
+    elif content == 2:
+        max_tokens = 5
+        result_type = 'txt'
+        content_text = """Detect the most prominent emotion in the sentence I will give you, by selecting the emotion from the following list:
             sadness, enthusiasm, neutral, worry, surprise, love, fun, hate, happiness, boredom, relief, anger
-            Your reply must be one word only, selected from the above list of emotions. If you cannot detect emotion, use neutral"""
-    model = "llama-3.2-1b-instruct"
+            Your reply must be just one word selected from the above list. Do not use anything else!"""
+    else:
+        max_tokens = 1
+        result_type = 'num'
+        content_text = """Detect the most prominent emotion expressed in the text I will give you.
+            Use only a number from the list 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, and 12 in your response to represent the detected emotion, where the returned numbers
+            correspond to detected emotions using the following mapping:
+                1. sadness
+                2. enthusiasm
+                3. neutral
+                4. worry
+                5. surprise
+                6. love
+                7. fun
+                8. hate
+                9.happiness
+                10. boredom
+                11. relief
+                12. anger
+            Do not use any words in your response, just the number corresponding to the most prominent emotion"""
+    model = "llama-3.2-1b@q8"
     if model_id == 1:
-        model = "llama-3.2-3b-instruct"
+        model = "llama-3.2-1b@q8"
     elif model_id == 2:
         model = "emollama-chat-7b"
     elif model_id == 3:
-        model = "fireball-meta-llama-3.2-8b-instruct-agent-003-128k-code-dpo"
+        model = "llama-3.2-3b@q4"
+    elif model_id == 4:
+        model = "llama-3.2-3b@q8"
+    elif model_id == 5:
+        model = "llama-3.2-8b@q4"
     if output == "CSV":
         extension = "csv"
     else:
@@ -90,7 +112,7 @@ def analyze_emotions_from_csv(file_path, content=1, model_id=0, output="JSON", s
             if index % 10 == 0:
                 print(f'{index + 1}/{number_of_sentences} sentences: Time per sentence {time_per_sentence:.3f}"'
                       f", {remaining_time:.3f} hours remaining")
-            with open(f"paragraph_results_{model}.{extension}", 'a', encoding="charmap", errors="replace") as file:
+            with open(f"results_{result_type}_{model}.{extension}", 'a', encoding="charmap", errors="replace") as file:
                 if output == "JSON" and file.tell() == 0:  # Checks if the file is empty
                     file.write("[\n")
                 # Add commas and format JSON entries properly
@@ -100,9 +122,10 @@ def analyze_emotions_from_csv(file_path, content=1, model_id=0, output="JSON", s
                 file.write(result)
     # Close the JSON array properly after processing all sentences
     if output == "JSON":
-        with open(f"paragraph_results_{model}.{extension}", 'a', encoding="charmap", errors="replace") as file:
+        with open(f"results_{result_type}_{model}.{extension}", 'a', encoding="charmap", errors="replace") as file:
             file.write("\n]\n")
 
 
 # Usage
-analyze_emotions_from_csv("paragraph_emotion_dataset.csv", content=1, model_id=0, output="JSON", start_index=551)
+# analyze_emotions_from_csv("tweet_emotions.csv", content=1, model_id=0, output="JSON", start_index=12050)
+analyze_emotions_from_csv("tweet_emotions.csv", content=2, model_id=4, output="CSV", start_index=0)
