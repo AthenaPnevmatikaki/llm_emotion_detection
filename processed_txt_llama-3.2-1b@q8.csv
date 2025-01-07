@@ -1013,7 +1013,7 @@ tweet_id,sentiment,content,Detected Emotion
 1957195455,happiness,so carlie came over and she fell asleep on me,neutral
 1957195514,neutral,@3Gguy and within a short time of the last clue all of them,neutral
 1957195703,neutral,my phone still doesnt tweet,neutral
-1957195915,neutral,"@blindcripple Good idea Brain, you can't not be on Twitter...",neutral
+1957195915,neutral,"@blindcripple Good idea Brain, you can't not be on Twitter...",happiness
 1957195949,sadness,@shaundiviney i didnt get the msg!! :'( but i bought princess,neutral
 1957196056,love,"Trying to learn how to do this &quot;twitter&quot; thing... I'll get there. Welcome to all my followers, though Im not that interesting",neutral
 1957196074,neutral,@mrskutcher just checked library website and girl with dragon tattoo is checked out,neutral
@@ -2270,7 +2270,7 @@ tweet_id,sentiment,content,Detected Emotion
 1957507085,empty,@davidnikel i don't even know what sporting social enterprise means....,neutral
 1957507539,neutral,"@Emsy Your pic didn't show up for me  Boo!!!! All the other pics on that site show up, but not yours",neutral
 1957508197,fun,yummy chocolate cake..wish even i got one for my b'day!!   anybody listening???,neutral
-1957508224,sadness,"Um, why arent episodes 1-14 of Lost season 5 on abc?!  Good thing Im going to Vegas in the am to keep me distracted from this tragedy.",neutral
+1957508224,sadness,"Um, why arent episodes 1-14 of Lost season 5 on abc?!  Good thing Im going to Vegas in the am to keep me distracted from this tragedy.",anger
 1957508254,worry,@fauzims It was white...  I acidentally left it in when i was doing my colours...,neutral
 1957508406,happiness,Going back to Manila this evening. All my trips to Cebu are so bitin.,neutral
 1957508686,love,@albamayo...I just posted my First video... A contest entry and my still is terrible too  boo...luv ur videos btw. Xxxrebelrebelxxx,neutral
@@ -8158,7 +8158,7 @@ tweet_id,sentiment,content,Detected Emotion
 1962056047,worry,http://twitpic.com/66yb9 Ozzy back from the vet. Not feeling well. He looks so sad.    Possible UTI. Results tomorrow.,neutral
 1962056436,sadness,@crystaaale wtf kinda best friend am I? I *still* haven't met the hubby. That depresses me,neutral
 1962056440,sadness,Room is so empty,neutral
-1962056452,hate,"Sitting in Mrs. Martins class, youtube is being stupid. and i REALLY want a popsicle!!! jealous of Sara",neutral
+1962056452,hate,"Sitting in Mrs. Martins class, youtube is being stupid. and i REALLY want a popsicle!!! jealous of Sara",hate
 1962056876,worry,zoita had a cardio apt. 2day. doc says her hole-in-the-heart hasn't closed. she'll need the surgery to close it http://ghurm.tumblr.com,neutral
 1962056915,worry,@LucyMeez   I tried that pincode... and it says it is expired... you only just put it up.,neutral
 1962056916,neutral,@inlovewitharmy i knoooooooooooow,neutral
@@ -10181,7 +10181,7 @@ tweet_id,sentiment,content,Detected Emotion
 1962841580,neutral,still waiting,neutral
 1962841827,enthusiasm,@deeliciouz Even without the dressing they're still over 500 calories. I love that flatbread.,neutral
 1962842897,sadness,@Cherryadestains It was blatently your fault for just shoving it in the bag when I said no  I felt that you had very much tricked me. xx,neutral
-1962842910,surprise,"@Yasmine32068 LOL I do too.... I can't take him back, I lost my receipt!",neutral
+1962842910,surprise,"@Yasmine32068 LOL I do too.... I can't take him back, I lost my receipt!",fun
 1962842926,neutral,"in computer class, photo booth doesn't  work",neutral
 1962842936,boredom,fml. forgot alli's dance recital is tonight. now i'm stuck talking to munchkins all night instead of being at devon's bonfire. :/,neutral
 1962843150,enthusiasm,going to work once again. what a great few days off i had. now it's over  but atleast i get 2 more commin up wahooooooo,neutral
@@ -13073,7 +13073,7 @@ tweet_id,sentiment,content,Detected Emotion
 1963867498,neutral,Annoyed,neutral
 1963867563,surprise,"Aww, no one's on MSN",neutral
 1963867748,worry,i would slip and fall... on the dirty school bathroom floor. fml.,neutral
-1963867815,worry,"Oh... according to mom dad is going to try and take 2-3 weeks off in Sep. to go to Austira, and just wrap a vacation into it as well lmao",neutral
+1963867815,worry,"Oh... according to mom dad is going to try and take 2-3 weeks off in Sep. to go to Austira, and just wrap a vacation into it as well lmao",happiness
 1963868209,worry,"@Chris_Gorham aww, what a shame  ........you can still #followfriday them though, no? &gt;.&gt;",neutral
 1963868487,worry,"Day 26 is in town. Wish I could catch the show, but I already have plans. Go figure!",neutral
 1963869004,worry,I couldn't find P4 so I couldn't show Brantley my feet  and now its raining,neutral
@@ -14305,7 +14305,7 @@ tweet_id,sentiment,content,Detected Emotion
 1964454192,fun,Hmm...what to make for dinner tonight???  No clue.  Don't feel like cooking anything    Hubby wants to go away tonight.,neutral
 1964454611,sadness,It's Hollie spelt with an 'ie' not a y!! She made me cry on BGT tonight  Gxx,neutral
 1964454625,fun,@staceyviera I know. I was hoping to meet you tonite  &amp; I just found out a few min ago that we have a mutual friend Cuong H.,neutral
-1964454785,sadness,"iigghhtt, just fur geet it. idc. idk. eh blah ugh. blah idk... hah..=] um yah.. immboredddd, ugh  ill just fuckitt",neutral
+1964454785,sadness,"iigghhtt, just fur geet it. idc. idk. eh blah ugh. blah idk... hah..=] um yah.. immboredddd, ugh  ill just fuckitt",boredom
 1964455050,neutral,Thundershowers plus baseball equals awwww,neutral
 1964455096,sadness,"How did I give birth to a SCREAMER?? I hate screaming children!! I guess I hate screaming children besides my own, now.",neutral
 1964455218,worry,@BrandonJhon something we all need sometime,neutral
@@ -21634,7 +21634,7 @@ tweet_id,sentiment,content,Detected Emotion
 1694273788,happiness,"Hehe, @stereogum in @brooklynvegan sta se malce preve? vï¿½ivela v v?erajï¿½nji Dark was the night koncert  No, ob takem lineupu...",neutral
 1694273821,relief,"Bank Holiday Bliss - Jeremy Kyle, without even bothering the Sky+",neutral
 1694273825,neutral,@Taryll sweet dreams,neutral
-1694273900,neutral,"i actually really liked Merlin last night. some parts were a bit eh, but the part where that chick was singing was like whoa.",neutral
+1694273900,neutral,"i actually really liked Merlin last night. some parts were a bit eh, but the part where that chick was singing was like whoa.",happiness
 1694273903,neutral,@TomFelton Safe flight home to you and Jade   XX,neutral
 1694273940,happiness,@imeldalaura it's a woodchipper &amp; it's gonna top off the weekend just nicely,neutral
 1694273981,happiness,@bellothika  The flowers grow!!,neutral
@@ -23093,7 +23093,7 @@ tweet_id,sentiment,content,Detected Emotion
 1694551371,happiness,Time to snuggle up in bed with the electric blankie on,neutral
 1694551388,happiness,"Nothing like 10P to kick-off the Bank Holiday, dig the haircut Luke! Next stop...Selfridges",neutral
 1694551397,relief,@chuckdarw1n whew! thassa relief,neutral
-1694551401,happiness,"@lollipop26 that was a really good interview to read, really enjoyed it  x",neutral
+1694551401,happiness,"@lollipop26 that was a really good interview to read, really enjoyed it  x",happiness
 1694551432,love,just set up a new computer again. 15min. I love Norton Ghost.,neutral
 1694551471,happiness,"is listening to Sunlounger's music, waiting for the sun to set.",neutral
 1694551508,happiness,"@christhesoul well doesn't that look fab, even if I do say so myself!",neutral
@@ -24111,7 +24111,7 @@ tweet_id,sentiment,content,Detected Emotion
 1694768494,love,"aww, jon ryan bob and greta in one picture? how adorable  and it brightens my morning, ty jon walker",neutral
 1694768516,neutral,"@robluketic You're not kidding when you say you have to be fast, are you?  I was there like 5 seconds after your tweet: nothing.",neutral
 1694768529,happiness,Soon my new job starts  I'm so happy!,neutral
-1694768589,surprise,"@Sazchik  I read somewhere they were restoring the name, hope it happens soon",neutral
+1694768589,surprise,"@Sazchik  I read somewhere they were restoring the name, hope it happens soon",enthusiasm
 1694768604,relief,[Wrong!] @anambanana thanx  your THE awesome! http://tinyurl.com/ddqpoa,neutral
 1694768606,love,"Thanks for the follow, Doug. I like that hat",neutral
 1694768649,love,@LJCharleston  Thanks darling girl   xx,neutral
@@ -27199,7 +27199,7 @@ tweet_id,sentiment,content,Detected Emotion
 1695692986,neutral,@jeremycowart http://onoir.com try to go if you can. I tell everyone who goes to Montreal to check it out. Even people who live there,neutral
 1695693005,neutral,Good Morning,neutral
 1695693066,neutral,"@alievans719 I have a question for you, Ali.",neutral
-1695693132,love,"@The_GreenWizard ah ha! Cool, will look into that more closely when i get on a proper sized screen! Thanks",neutral
+1695693132,love,"@The_GreenWizard ah ha! Cool, will look into that more closely when i get on a proper sized screen! Thanks",happiness
 1695693187,worry,Feel sorry for Adam Cook. Be strong for David and family,neutral
 1695693232,neutral,@StephanieFiler Thanks! That will be you in October,neutral
 1695693234,neutral,Did you know if you want to stay cool all day use a shower gel or bath wash with peppermint in it,neutral
@@ -29338,7 +29338,7 @@ tweet_id,sentiment,content,Detected Emotion
 1751177431,neutral,@wildbluebug Yep! Here's a pic of the kid standing on the Puffy Taco.  - Photo: http://bkite.com/07jZs,neutral
 1751177442,neutral,Home from the mall  &amp; got mommy's gift for tomrrow,neutral
 1751177473,love,"@spiritequality lol well, RBI IS the one that schooled me on the art of djing when I was a teen. I call him my Jedi Master.",neutral
-1751177487,worry,"@mattmoreno I really like miller park too  too bad the cubs aren't leading, hopefully they can get it together soon",neutral
+1751177487,worry,"@mattmoreno I really like miller park too  too bad the cubs aren't leading, hopefully they can get it together soon",enthusiasm
 1751177564,neutral,"@Pamela010474 nope..not drunk..sometimes I think maybe I should..then maybe Twitter would make sense, ya know!",neutral
 1751177631,love,Itt's the BIG TIME Saturday night  Playing Canasta then a movie then...Psych homework?  Stay shiny and love everybody!!,neutral
 1751177637,love,At the fashion show supporting my allison,neutral
@@ -29714,7 +29714,7 @@ tweet_id,sentiment,content,Detected Emotion
 1751323927,worry,Happy Mother's Day to all the Momma's to be and Mommas currently.  Have a wonderful day!!!,neutral
 1751323943,relief,"@brigwyn Yup, everything's there.",neutral
 1751323961,love,loves the cancuks  &lt;3,neutral
-1751324010,sadness,"@kristenhaulser yuppp. I was gonna get it up top but I didn't. I will soon, but I got 2nd holes instead",neutral
+1751324010,sadness,"@kristenhaulser yuppp. I was gonna get it up top but I didn't. I will soon, but I got 2nd holes instead",enthusiasm
 1751324043,surprise,@HeatherShorter I love that song! I was starting to think I was the only one that knew that one!    #sameperson,neutral
 1751324066,worry,We're practicing our blackjack skills. It doesn't look hopeful.  http://yfrog.com/0l2tsj,neutral
 1751324079,neutral,@mileysupportrs1 Definitley Miley,neutral
@@ -31012,7 +31012,7 @@ tweet_id,sentiment,content,Detected Emotion
 1751786473,happiness,@Coodieranks Thats nice. My cousin just left my house. He has daughter's their all daddy's girls. So sweet,neutral
 1751786516,relief,its awful breezy out here good thing they sold blankets!,neutral
 1751786528,love,"Happy Mother's Day!!!  I'm at the beach with my family. It's a warm, clear night with a beautiful full moon...",neutral
-1751786533,fun,"Making a video for HitRecord... hope it comes out well, it'll be my first record",neutral
+1751786533,fun,"Making a video for HitRecord... hope it comes out well, it'll be my first record",enthusiasm
 1751786631,happiness,alone @ home... nice  very nice!!,neutral
 1751786651,neutral,"@willemss Lol, eBay? You laugh now...juuuuuust wait.",neutral
 1751786750,surprise,"Haha!!! Korn is FUNNY!!  ugh... If I drink any more $10 beers , I'm going to... Get fat! :/",neutral
@@ -34541,7 +34541,7 @@ tweet_id,sentiment,content,Detected Emotion
 1752896089,surprise,"Calling all mothers, calling all mothers...get your butts to bed - the kids'll be here tomorrow",neutral
 1752896112,surprise,Constructivist learning theory - anybody? Oh wait..... there's always wikipedia right?!,neutral
 1752896144,happiness,yay new computer to fiddle about with,neutral
-1752896228,happiness,"@illegalvenez Mmm, comfort junk food. That sounds good. I always preferred Wingstop",neutral
+1752896228,happiness,"@illegalvenez Mmm, comfort junk food. That sounds good. I always preferred Wingstop",relief
 1752896241,surprise,"@melbritt_xo hey hey, ur following me  ur gna relise that i tweet ALOT!! haha more than a normal person wud but im not normal",neutral
 1752896278,fun,@souljaboytellem gimme some ! i wanna try it   (Soulja Boy Tell 'Em LIVE live &gt; http://ustre.am/2UhS),neutral
 1752896282,neutral,@TheDigitalEric I'll believe it when I see it,neutral
@@ -36449,7 +36449,7 @@ tweet_id,sentiment,content,Detected Emotion
 1753311804,love,great night! great peolple!,neutral
 1753311848,happiness,@adnamay nite nite bday girl  have fun at concert,neutral
 1753311852,relief,@kgopal Ah! Thank you!,neutral
-1753311858,worry,"This site made me &quot;lol&quot;, take a look when you can: http://bit.ly/zUjKf",neutral
+1753311858,worry,"This site made me &quot;lol&quot;, take a look when you can: http://bit.ly/zUjKf",fun
 1753311902,neutral,good morning to everyone,neutral
 1753311925,happiness,@tim_buckley Good morning from sunny London...sounds like an oxymoron but happens to be true of today  Hurrah!,neutral
 1753311929,happiness,@jonathanrknight so great to hear from u again today! U r the best! Cannot wait to see u on the cruise!!! &lt;3 Cindy with the sign,neutral
@@ -36641,7 +36641,7 @@ tweet_id,sentiment,content,Detected Emotion
 1753347976,happiness,"Morning all its beautiful out already, glorious sunshine. Wash and vacum car Done, fill with petrol Done, bbq stuff buy Done.",neutral
 1753348007,neutral,@thisisryanross pictures ross.,neutral
 1753348015,neutral,most of da time on gtalk ! pls make my follow count 600,neutral
-1753348032,happiness,"@TerriLPN Thanks, Terri!  I am so excited to pick Parker up on Monday.   I hope he gets along with David! #pixiebob",neutral
+1753348032,happiness,"@TerriLPN Thanks, Terri!  I am so excited to pick Parker up on Monday.   I hope he gets along with David! #pixiebob",enthusiasm
 1753348125,worry,"@califmom @sendchocolate - we're getting closer rather than further from REAL lobby dates - Chicago, BlogHer09 - squee!!!",neutral
 1753348161,love,@sumtxkid loved our lil tent-side jam session/mosh pit!!! EDGEFESSSSSST!!!,neutral
 1753348253,hate,"@Emoly_ really!? that son of a bitch, screw him, ill talk to on msn later k  xox",neutral
@@ -37144,7 +37144,7 @@ tweet_id,sentiment,content,Detected Emotion
 1753434603,surprise,@spmwinkel Didn't realize you were that young! Advanced Happy Birthday Stefan. MTFBWY... Always!,neutral
 1753434610,neutral,I had a small tweetbreak from twitter I think I needed it,neutral
 1753434615,neutral,@soaps3 Knighty Knight,neutral
-1753434620,neutral,"I'm not. If it looks like a legitimate profile, I'll counter-follow.  @leighgrace Are you picky about who you follow back? Why or why not?",neutral
+1753434620,neutral,"I'm not. If it looks like a legitimate profile, I'll counter-follow.  @leighgrace Are you picky about who you follow back? Why or why not?",happiness
 1753434709,love,@chantelleaustin  Good one,neutral
 1753434732,sadness,@yiannis_k good question  could they?,neutral
 1753434766,worry,@TheRealYungBerg FOLLOW ME BABY U SAID N DA CHAT U WILL  LUV YA GOODNITE,neutral
@@ -39869,7 +39869,7 @@ tweet_id,sentiment,content,Detected Emotion
 1753887070,love,is so  just made a card 4 my mom!!   can't wait to see the smile on her face when she see's it!!,neutral
 1753887073,worry,@wendy_fred6 *shivers with fear*,neutral
 1753887094,neutral,@21five would love to hear all of this from a Nokia perspective...,neutral
-1753887157,fun,"@exhilarating haha, not always, just a 2-day-trip, for a friend. But I've been here some times. That's why I know basic Japanese",neutral
+1753887157,fun,"@exhilarating haha, not always, just a 2-day-trip, for a friend. But I've been here some times. That's why I know basic Japanese",happiness
 1753887163,neutral,@RajaSen Sports Bar Shatranjanpoli Rest Ph 26498457 All Sports Bar Andheri W 26733333 Dont know whether that helps. Google ki jai ho,neutral
 1753887165,worry,@ram014  thanks...but what happened?,neutral
 1753887200,sadness,Man i hate church. Has to be done though. I like the way it makes other people feel good,neutral

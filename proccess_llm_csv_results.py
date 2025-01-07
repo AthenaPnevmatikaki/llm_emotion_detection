@@ -9,11 +9,40 @@ def find_number_in_string(s):
 
 # Define results file to process
 prompt = ['list-reason', 'reason', 'txt', 'num']
-model = ['llama-3.2-1b@q8', 'llama-3.2-3b@q4', 'llama-3.2-3b@q8', 'llama-3.2-8b@q4']
+model = ['llama-3.2-1b@q8', 'llama-3.2-3b@q4', 'llama-3.2-3b@q8', 'llama-3.2-8b@q4',
+         'emollama-3.1-8b@q4', 'emollama-chat-7b@q4', 'emollama-chat-13b@q3']
 
 # Define the list of possible detected emotions
 emotions = ['empty', 'sadness', 'enthusiasm', 'neutral', 'worry', 'surprise', 
             'love', 'fun', 'hate', 'happiness', 'boredom', 'relief', 'anger']
+# Synonym-to-emotion mapping
+synonyms = [
+        {"original": "happiness",
+         "synonyms": ["gratitude", "happy", "joy", "enjoyment", "cheerfulness", "glee", "bliss", "ecstasy",
+                      "satisfaction", "jubilation", "excitement"]},
+        {"original": "sadness",
+         "synonyms": ["guilt", "gloom", "lonely", "regret", "grief", "depression", "disappointment", "sad", "sorrow" "grief" "melancholy" "mourning", "despair", "heartache", "loneliness", "nostalgia", "bittersweet"]},
+        {"original": "fun",
+         "synonyms": ["entertainment", "amusement", "laughter", "playfulness", "hilarity", "lol"]},
+        {"original": "enthusiasm",
+         "synonyms": ["hope", "enthusiast", "excited"]},
+        {"original": "anger",
+         "synonyms": ["angry", "rage", "fury", "wrath", "irritation", "resentment", "annoyance", "frustration"]},
+        {"original": "love",
+         "synonyms": ["flirtatious", "affection", "adoration", "fondness", "passion", "devotion", "infatuation", "hot", "longing"]},
+        {"original": "worry",
+         "synonyms": ["fear", "anxiety", "concern", "unease", "dread", "trepidation", "pain", "worried"]},
+        {"original": "surprise",
+         "synonyms": ["shock", "astonishment", "amazement", "awe", "startle"]},
+        {"original": "relief",
+         "synonyms": ["relaxed", "comfort", "ease", "reassurance", "safety"]},
+        {"original": "hate",
+         "synonyms": ["jealous", "hatred", "loathing", "disgust", "abhorrence", "revulsion", "envy", "dislike"]},
+        {"original": "boredom",
+         "synonyms": ["bored"]},
+        {"original": "empty",
+         "synonyms": ["apathy", "indifference", "detachment", "numbness", "unconcern"]}
+    ]
 
 # Load the sentences & ground truth CSV file into a DataFrame
 csv_df = pd.read_csv("tweet_emotions.csv")  # replace with the path to your CSV file
@@ -41,6 +70,12 @@ for p in prompt:
                 matched_emotion = None
                 if p != "num":
                     matched_emotion = next((emotion for emotion in emotions if emotion in emotion_text), None)
+                    if not matched_emotion:
+                        for synonym_def in synonyms:
+                            matched_emotion = next((emotion for emotion in synonym_def["synonyms"] if emotion in emotion_text), None)
+                            if matched_emotion:
+                                matched_emotion = synonym_def["original"]
+                                break
                 else:
                     index = find_number_in_string(emotion_text)
                     if index and 0 <= index < len(emotions):
