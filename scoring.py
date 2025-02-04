@@ -12,7 +12,7 @@ models = ['llama-3.2-1b@q8', 'llama-3.2-3b@q4', 'llama-3.2-3b@q8', 'llama-3.2-8b
 # the name of a CSV (e.g. processed_txt_word2vec.csv) to score only against the results found there
 guide = 'processed_txt_word2vec-nn.csv'
 grouping = 1 # 0: No grouping, 1: 1st-level grouping into 7 classes, 2: 2nd-level grouping into 3 classes
-show_cm = False
+show_cm = True
 scores_name = 'Scores'
 if guide:
     scores_name= f'{scores_name} 8k'
