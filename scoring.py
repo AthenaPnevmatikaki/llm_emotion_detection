@@ -11,6 +11,7 @@ models = ['llama-3.2-1b@q8', 'llama-3.2-3b@q4', 'llama-3.2-3b@q8', 'llama-3.2-8b
 # Use None to score every row in the prompt-model combination, or
 # the name of a CSV (e.g. processed_txt_word2vec.csv) to score only against the results found there
 guide = 'processed_txt_word2vec-nn.csv'
+#guide = None
 grouping = 1 # 0: No grouping, 1: 1st-level grouping into 7 classes, 2: 2nd-level grouping into 3 classes
 show_cm = False
 scores_name = 'Scores'
