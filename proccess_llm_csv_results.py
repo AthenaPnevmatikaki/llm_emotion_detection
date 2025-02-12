@@ -15,6 +15,7 @@ model = ['llama-3.2-1b@q8', 'llama-3.2-3b@q4', 'llama-3.2-3b@q8', 'llama-3.2-8b@
 # Define the list of possible detected emotions
 emotions = ['empty', 'sadness', 'enthusiasm', 'neutral', 'worry', 'surprise', 
             'love', 'fun', 'hate', 'happiness', 'boredom', 'relief', 'anger']
+
 # Synonym-to-emotion mapping
 synonyms = [
         {"original": "happiness",
@@ -45,7 +46,7 @@ synonyms = [
     ]
 
 # Load the sentences & ground truth CSV file into a DataFrame
-csv_df = pd.read_csv("tweet_emotions.csv")  # replace with the path to your CSV file
+csv_df = pd.read_csv("tweet_emotions.csv")  
 
 for p in prompt:
     for m in model:
