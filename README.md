@@ -15,6 +15,7 @@ The goal is to classify text into 13 different emotions using various LLMs and c
 * Models were run locally using LM Studio
 
 ## Dataset
+* The dataset I used is called _tweet_emotions.csv_
 * 40,000 tweets labeled with 13 emotions
 * Unbalanced dataset (some emotions appear more frequently than others)
 
